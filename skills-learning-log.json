@@ -92,5 +92,19 @@
       "preview": "github.md\n222.6k\n1\n2\n3\n4\nexport github\nfrom \"openclaw/openclaw\"\nGitHub operations via `gh` CLI: issu"
     },
     "details": "This website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot."
+  },
+  {
+    "timestamp": "2026-02-24T16:00:01.492Z",
+    "hour": 0,
+    "category": "🎬 视频/图片",
+    "searchQuery": "frame",
+    "skillLearned": {
+      "name": "camsnap",
+      "stars": "222.6k",
+      "link": "https://skillsmp.com/skills/openclaw-openclaw-skills-camsnap-skill-md",
+      "path": "openclaw-openclaw-skills-camsnap-skill-md",
+      "preview": "camsnap.md\n222.6k\n1\n2\n3\n4\nexport camsnap\nfrom \"openclaw/openclaw\"\nCapture frames or clips from RTSP/"
+    },
+    "details": "This website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot."
   }
 ]

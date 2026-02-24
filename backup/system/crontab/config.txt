@@ -1,6 +1,7 @@
-# OpenClaw 定时任务配置 - 完全本地版
+#!/bin/bash
+# OpenClaw 定时任务配置 - 完整版 (11个任务)
 # 存储位置: ~/.openclaw/workspace/backup/system/crontab/config.txt
-# 安装方式: crontab ~/.openclaw/workspace/backup/system/crontab/config.txt
+# 应用方式: crontab ~/.openclaw/workspace/backup/system/crontab/config.txt
 
 # ============================================
 # 每小时执行 (3个任务)
@@ -29,27 +30,41 @@
 0 21 * * * cd /home/zzyuzhangxing/.openclaw/workspace && /usr/bin/python3 scripts/short-drama-daily-report.py >> /home/zzyuzhangxing/.openclaw/workspace/backup/system/logs/short-drama-daily-report.log 2>&1
 
 # ============================================
-# 每日一次执行 (4个任务)
+# 每日一次执行 (5个任务)
 # ============================================
 
 # 7. 系统运维日报 (09:00)
 0 9 * * * cd /home/zzyuzhangxing/.openclaw/workspace && /usr/bin/bash scripts/system-ops-daily-report.sh >> /home/zzyuzhangxing/.openclaw/workspace/backup/system/logs/system-ops-daily-report.log 2>&1
 
-# 8. 本地每日备份 (02:00)
+# 8. B站个人账号数据获取 (09:00) - 新增
+0 9 * * * cd /home/zzyuzhangxing/.openclaw/workspace && /usr/bin/python3 scripts/bilibili-account-fetch.py >> /home/zzyuzhangxing/.openclaw/workspace/backup/system/logs/bilibili-account-fetch.log 2>&1
+
+# 9. 泛AI情报监控 (09:00) - 新增
+0 9 * * * cd /home/zzyuzhangxing/.openclaw/workspace && /usr/bin/python3 scripts/ai-intelligence-monitor.py >> /home/zzyuzhangxing/.openclaw/workspace/backup/system/logs/ai-intelligence-monitor.log 2>&1
+
+# 10. 统一每日汇报生成 (09:30) - 新增，汇总所有数据
+30 9 * * * cd /home/zzyuzhangxing/.openclaw/workspace && /usr/bin/python3 scripts/generate-daily-report.py >> /home/zzyuzhangxing/.openclaw/workspace/backup/system/logs/daily-report.log 2>&1
+
+# 11. 本地每日备份 (02:00)
 0 2 * * * /home/zzyuzhangxing/.openclaw/workspace/backup/scripts/daily-backup.sh >> /home/zzyuzhangxing/.openclaw/workspace/backup/system/logs/daily-backup.log 2>&1
 
-# 9. 对话记录归档 (02:00)
+# 12. 对话记录归档 (02:00)
 0 2 * * * cd /home/zzyuzhangxing/.openclaw/workspace && /usr/bin/bash scripts/daily-chat-backup.sh >> /home/zzyuzhangxing/.openclaw/workspace/backup/system/logs/daily-chat-backup.log 2>&1
 
-# 10. Git自动备份 (每30分钟)
+# 13. Git自动备份 (每30分钟)
 */30 * * * * cd /home/zzyuzhangxing/.openclaw/workspace && /usr/bin/git add -A && /usr/bin/git commit -m "Auto backup: $(date +%Y%m%d_%H%M%S)" && /usr/bin/git push origin main >> /home/zzyuzhangxing/.openclaw/workspace/backup/system/logs/auto-git-backup.log 2>&1
 
 # ============================================
 # 说明
 # ============================================
-# 总任务数: 10个
-# 本地完全可用: 10个 (100%)
-# 依赖飞书API: 0个 (0%)
+# 总任务数: 13个
+# 本地完全可用: 13个 (100%)
+# 依赖飞书API: 0个 (汇报生成后会尝试同步，但不依赖)
 # 
+# 汇报体系:
+#   09:00 - B站账号数据 + 泛AI情报 (并行执行)
+#   09:30 - 统一每日汇报生成 (汇总所有数据)
+#   09:35 - 尝试同步到飞书Wiki (如API可用)
+#
 # 如需恢复定时任务，执行:
 # crontab ~/.openclaw/workspace/backup/system/crontab/config.txt
