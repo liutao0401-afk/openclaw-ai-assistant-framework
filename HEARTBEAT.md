@@ -82,16 +82,36 @@ cd ~/.openclaw/workspace && python3 scripts/generate-daily-report.py
 
 ---
 
+## 脚本修复记录
+
+### 2026-02-26 修复
+
+| 脚本 | 问题 | 修复内容 |
+|------|------|----------|
+| `learn-skill.js` | SkillsMP网站AI搜索需登录，返回0结果 | 改为直接浏览技能列表，按类别筛选，去重 |
+| `bilibili-account-fetch.py` | 无错误处理，Cookie过期时崩溃 | 添加完善错误处理和日志记录 |
+| `ai-intelligence-monitor.py` | 无日志记录，412错误未处理 | 添加日志系统和反爬错误处理 |
+| `generate-daily-report.py` | 无日志记录，变量未定义 | 添加日志系统和异常处理 |
+
+### 日志位置
+所有脚本日志统一存放：`~/.openclaw/workspace/logs/`
+- `bilibili_account.log` - B站账号数据
+- `ai_intelligence.log` - AI情报监控
+- `daily_report.log` - 日报生成
+- `feishu_sync.log` - 飞书同步
+
+---
+
 ## 常规Heartbeat检查
 
 如果收到常规 heartbeat（无特定事件），检查：
 1. 定时任务状态 - `openclaw cron list`
-2. 磁盘空间使用情况
-3. 最近的错误日志
+2. 日志文件是否有异常 - `tail -n 20 ~/.openclaw/workspace/logs/*.log`
+3. 磁盘空间使用情况
 
 如一切正常，回复: HEARTBEAT_OK
 
 ---
 
-_更新: 2026-02-25_  
+_更新: 2026-02-26_  
 _任务数: 5个运行中 | 变更需授权: ✅_

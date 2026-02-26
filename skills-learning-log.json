@@ -519,5 +519,50 @@
       "link": ""
     },
     "details": ""
+  },
+  {
+    "timestamp": "2026-02-26T03:32:08.220Z",
+    "hour": 11,
+    "category": "📊 数据分析",
+    "skillLearned": {
+      "name": "openclaw openclaw skills model usage skill md",
+      "path": "openclaw-openclaw-skills-model-usage-skill-md",
+      "link": "https://skillsmp.com/skills/openclaw-openclaw-skills-model-usage-skill-md",
+      "stars": "227.3k",
+      "description": "from \"openclaw/openclaw\"",
+      "fullText": "model-usage.md\n227.3k\n1\n2\n3\n4\nexport model-usage\nfrom \"openclaw/openclaw\"\nUse CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most recent) model ",
+      "category": "data"
+    },
+    "details": "Skip to main content\nready\n~/\nskillsmp\n$\nai\n--search\n$\ncd\n/categories\n$\nwatch\nstats\n$\nman\ndocs\n$\napi\n--docs\nEN"
+  },
+  {
+    "timestamp": "2026-02-26T03:37:22.876Z",
+    "hour": 11,
+    "category": "📦 其他",
+    "skillLearned": {
+      "name": "openclaw openclaw skills sonoscli skill md",
+      "path": "openclaw-openclaw-skills-sonoscli-skill-md",
+      "link": "https://skillsmp.com/skills/openclaw-openclaw-skills-sonoscli-skill-md",
+      "stars": "227.3k",
+      "description": "from \"openclaw/openclaw\"",
+      "fullText": "sonoscli.md\n227.3k\n1\n2\n3\n4\nexport sonoscli\nfrom \"openclaw/openclaw\"\nControl Sonos speakers (discover/status/play/volume/group).\n2026-02-21",
+      "category": "other"
+    },
+    "details": ""
+  },
+  {
+    "timestamp": "2026-02-26T03:38:29.368Z",
+    "hour": 11,
+    "category": "📦 其他",
+    "skillLearned": {
+      "name": "openclaw openclaw extensions feishu skills feishu drive skill md",
+      "path": "openclaw-openclaw-extensions-feishu-skills-feishu-drive-skill-md",
+      "link": "https://skillsmp.com/skills/openclaw-openclaw-extensions-feishu-skills-feishu-drive-skill-md",
+      "stars": "227.3k",
+      "description": "from \"openclaw/openclaw\"",
+      "fullText": "feishu-drive.md\n227.3k\n1\n2\n3\n4\nexport feishu-drive\nfrom \"openclaw/openclaw\"\nFeishu cloud storage file management. Activate when user mentions cloud space, folders, drive.\n2026-02-06",
+      "category": "other"
+    },
+    "details": ""
   }
 ]
