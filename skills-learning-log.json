@@ -957,5 +957,17 @@
       "source": "awesome-openclaw-skills"
     },
     "details": "# vinculum\n\n## \u7c7b\u522b\n\u2699\ufe0f \u81ea\u52a8\u5316\n\n## \u63cf\u8ff0\nShared consciousness between Clawdbot instances.\n\n## \u6765\u6e90\n\u5b98\u65b9\u6280\u80fd\u5e93: https://github.com/VoltAgent/awesome-openclaw-skills\n\n## \u5b89\u88c5\u65b9\u5f0f\n```bash\nnpx clawhub@latest install vinculum\n```\n\n\u6216\u8005\u76f4\u63a5\u590d\u5236\u6280\u80fd\u6587\u4ef6\u5939\u5230:\n- Global: `~/.openclaw/skills/`\n- Workspace: `<project>/skills/`\n\n## \u5b98\u65b9\u94fe\u63a5\nhttps://github.com/openclaw/skills/tree/main/skills/koba42corp/vinculum/SKILL.md\n"
+  },
+  {
+    "timestamp": "2026-02-26T21:34:15.482329",
+    "hour": 21,
+    "category": "\ud83d\udcca \u6570\u636e\u5206\u6790",
+    "skillLearned": {
+      "name": "skill-hexmem",
+      "url": "https://github.com/openclaw/skills/tree/main/skills/santyr/skill-hexmem/SKILL.md",
+      "description": "Structured memory database for AI agent identity, tasks, events",
+      "source": "awesome-openclaw-skills"
+    },
+    "details": "# skill-hexmem\n\n## \u7c7b\u522b\n\ud83d\udcca \u6570\u636e\u5206\u6790\n\n## \u63cf\u8ff0\nStructured memory database for AI agent identity, tasks, events\n\n## \u6765\u6e90\n\u5b98\u65b9\u6280\u80fd\u5e93: https://github.com/VoltAgent/awesome-openclaw-skills\n\n## \u5b89\u88c5\u65b9\u5f0f\n```bash\nnpx clawhub@latest install skill-hexmem\n```\n\n\u6216\u8005\u76f4\u63a5\u590d\u5236\u6280\u80fd\u6587\u4ef6\u5939\u5230:\n- Global: `~/.openclaw/skills/`\n- Workspace: `<project>/skills/`\n\n## \u5b98\u65b9\u94fe\u63a5\nhttps://github.com/openclaw/skills/tree/main/skills/santyr/skill-hexmem/SKILL.md\n"
   }
 ]
