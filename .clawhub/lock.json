@@ -44,6 +44,14 @@
     "demo-video": {
       "version": "1.0.0",
       "installedAt": 1772229700677
+    },
+    "ai-notes-video": {
+      "version": "1.0.0",
+      "installedAt": 1772233366345
+    },
+    "ai-agent-helper": {
+      "version": "1.0.0",
+      "installedAt": 1772233393643
     }
   }
 }

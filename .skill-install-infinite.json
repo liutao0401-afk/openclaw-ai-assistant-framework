@@ -14,7 +14,10 @@
     "agent-team-orchestration",
     "video-frames",
     "remotion-video-toolkit",
-    "demo-video"
+    "demo-video",
+    "ai-notes-video",
+    "ai-agent-helper",
+    "ai-boss-assistant"
   ],
   "keywordIndex": 3
 }
