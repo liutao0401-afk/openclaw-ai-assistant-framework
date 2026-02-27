@@ -1,8 +1,0 @@
-0 * * * * cd /home/zzyuzhangxing/.openclaw/workspace && /usr/bin/node learn-skill.js >> /home/zzyuzhangxing/.openclaw/workspace/learn-cron.log 2>&1
-# 本地备份系统
-0 * * * * /home/zzyuzhangxing/.openclaw/workspace/backup/scripts/hourly-backup.sh >> /home/zzyuzhangxing/.openclaw/workspace/backup/system/logs/hourly.log 2>&1
-0 2 * * * /home/zzyuzhangxing/.openclaw/workspace/backup/scripts/daily-backup.sh >> /home/zzyuzhangxing/.openclaw/workspace/backup/system/logs/daily.log 2>&1
-# B站账号数据监控
-0 9 * * * cd /home/zzyuzhangxing/.openclaw/workspace && /usr/bin/python3 scripts/bilibili-account-fetch.py >> /home/zzyuzhangxing/.openclaw/workspace/backup/system/logs/bilibili-account.log 2>&1
-# 统一每日汇报生成
-30 9 * * * cd /home/zzyuzhangxing/.openclaw/workspace && /usr/bin/python3 scripts/generate-daily-report.py >> /home/zzyuzhangxing/.openclaw/workspace/backup/system/logs/daily-report.log 2>&1
