@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-02-27T20:09:27.196815",
+  "pools": {
+    "fast": {
+      "name": "高速池",
+      "primary": {
+        "status": "healthy",
+        "api_reachable": true,
+        "last_check": "2026-02-27T20:09:28.253920"
+      },
+      "fallback": {
+        "status": "healthy",
+        "api_reachable": true,
+        "last_check": "2026-02-27T20:09:29.216593"
+      }
+    },
+    "smart": {
+      "name": "智能池",
+      "primary": {
+        "status": "healthy",
+        "api_reachable": true,
+        "last_check": "2026-02-27T20:09:30.201180"
+      },
+      "fallback": {
+        "status": "healthy",
+        "api_reachable": true,
+        "last_check": "2026-02-27T20:09:31.278214"
+      }
+    },
+    "text": {
+      "name": "文本池",
+      "primary": {
+        "status": "healthy",
+        "api_reachable": true,
+        "last_check": "2026-02-27T20:09:32.312618"
+      },
+      "fallback": {
+        "status": "healthy",
+        "api_reachable": true,
+        "last_check": "2026-02-27T20:09:33.284884"
+      }
+    },
+    "vision": {
+      "name": "视觉池",
+      "primary": {
+        "status": "healthy",
+        "api_reachable": true,
+        "last_check": "2026-02-27T20:09:34.277030"
+      },
+      "fallback": {
+        "status": "healthy",
+        "api_reachable": true,
+        "last_check": "2026-02-27T20:09:35.234132"
+      }
+    }
+  }
+}

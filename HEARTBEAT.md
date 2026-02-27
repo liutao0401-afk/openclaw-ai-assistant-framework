@@ -102,6 +102,31 @@ cd ~/.openclaw/workspace && python3 scripts/generate-daily-report.py
 **迭代周期**: 每周一 20:00
 **下次迭代**: 2026-03-02 20:00
 
+### smart_backup_check
+**触发**: 每小时整点
+**操作**:
+```bash
+bash ~/.openclaw/workspace/scripts/smart-backup.sh
+```
+**说明**: 
+- 智能备份：24小时或10K变化触发
+- 本地备份：7天轮换（周一~周日）
+- 云端同步：iCloud（可选）
+**备份文件**: MEMORY.md, USER.md, IDENTITY.md, SOUL.md, AGENTS.md, HEARTBEAT.md, TOOLS.md, openclaw.json
+**恢复方式**: `bash scripts/auto-restore.sh` 或查看 `docs/backup-restore-guide.md`
+
+### model_health_check
+**触发**: 每6小时
+**操作**:
+```bash
+python3 scripts/model-health-check.py
+```
+**说明**: 
+- 检查模型池健康程度
+- 检查API可达性、Token余额、Rate Limit
+- 记录健康状态到 `data/model-health-status.json`
+**模型池**: 高速池、智能池、文本池
+
 ---
 
 ## 每日汇报时间线
