@@ -20,7 +20,10 @@
     "ai-boss-assistant",
     "alicloud-ai-content-aimiaobi",
     "ai-bill-clawhub",
-    "hk-ai-stock-expert"
+    "hk-ai-stock-expert",
+    "alicloud-ai-text-document-mind",
+    "ai-hunter-pro",
+    "ai-news-zh"
   ],
   "keywordIndex": 3
 }

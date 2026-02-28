@@ -56,6 +56,10 @@
     "hk-ai-stock-expert": {
       "version": "1.0.0",
       "installedAt": 1772236995524
+    },
+    "ai-news-zh": {
+      "version": "1.0.0",
+      "installedAt": 1772240647130
     }
   }
 }
